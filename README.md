@@ -21,18 +21,19 @@ TypeScript (TS) busca ofrecer una experiencia de desarrollo similar a la de leng
 3. **Compatibilidad total con JavaScript**: Todo el código JavaScript es válido en TypeScript.
 4. **Transpilación**: TypeScript no puede ejecutarse directamente en el navegador. En su lugar, se transpila a JavaScript, lo que significa que traduce el código TypeScript a JavaScript estándar.
 
-
+```
 ⌈‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾⌉
-|  ⌈‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾⌉    |
+|  ⌈‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾⌉    | 
 |  |  ⌈‾‾‾‾‾⌉         |    |
 |  |  | js | ESNEXT  | TS |
 |  |  ⌊_____⌋         |    |
 |  ⌊__________________⌋    |
 ⌊__________________________⌋
 
-- **JS**: JavaScript estándar.
-- **ESNext**: Características más recientes de JavaScript.
-- **TS**: TypeScript, que incluye todo lo anterior y agrega nuevas funcionalidades.
+- JS: JavaScript estándar.
+- ESNext: Características más recientes de JavaScript.
+- TS: TypeScript, que incluye todo lo anterior y agrega nuevas funcionalidades.
+```
 
 ### Diferencias clave
 
