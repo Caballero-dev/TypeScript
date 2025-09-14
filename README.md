@@ -39,3 +39,10 @@ TypeScript (TS) busca ofrecer una experiencia de desarrollo similar a la de leng
 
 - **Transpilar**: Traducir un código de un lenguaje a otro manteniendo la misma funcionalidad. En este caso, TypeScript se transpila a JavaScript.
 - **Compilar**: Convertir un código fuente en un binario ejecutable por la máquina.
+
+## Recursos recomendados
+
+Algunas páginas recomendadas para aprender más sobre TypeScript
+
+- [Documentación Oficial - TypeScript](https://www.typescriptlang.org/docs/)
+- [W3Schools - TypeScript](https://www.w3schools.com/typescript/index.php)
