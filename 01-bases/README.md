@@ -65,3 +65,9 @@ Esto es útil para trabajar de manera más eficiente, ya que no es necesario eje
 TypeScript, siempre que sea posible, intentará **inferir el tipo de dato** de una variable basándose en su valor inicial.
 
 > **Más información:** Consulta [`Tipos`](tipos/README.md)
+
+## Funciones 
+
+Descripción
+
+> **Más información:** Consulta [`Tipos`](funciones/README.md)
