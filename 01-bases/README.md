@@ -88,3 +88,46 @@ En esta sección se trabajara con objetos
 - **Tipos de unión**: Cómo manejar objetos que puedan tener múltiples formas utilizando `|`.
 
 > **Más información:** Consulta [`Objetos`](objetos/README.md)
+
+## tsconfig.json
+
+El archivo `tsconfig.json` permite configurar el comportamiento del compilador de TypeScript.
+
+### Depuración del código de TypeScript
+**`sourceMap`**: Genera archivos `.map` que vinculan el código JavaScript transpilado con el código TypeScript original. Esto facilita la depuración, ya que puedes ver y trabajar con el código TypeScript en herramientas como navegadores o editores.
+
+**Ejemplo**: Si ocurre un error en el archivo transpilado, el navegador mostrará la línea correspondiente en el archivo TypeScript original.
+
+### Remover comentarios
+**`removeComments`**: Si está habilitado (`true`), elimina todos los comentarios del código JavaScript generado. Esto ayuda a reducir el tamaño de los archivos transpilados.
+
+**Útil para producción**, donde los comentarios no son necesarios.
+
+### Incluir y excluir archivos o carpetas
+- **`exclude`**: Define qué archivos o carpetas deben ser excluidos del proceso de compilación. Por defecto, los módulos de `node_modules` están excluidos automáticamente.
+
+  **Ejemplo**: 
+  ```json
+  "exclude": ["app-exclude.ts"]
+  ```
+- **`include`**: Especifica qué archivos o carpetas deben ser incluidos en el proceso de compilación. Si no se define, se incluyen todos los archivos `.ts` del proyecto.
+
+  **Ejemplo**:
+  ```json
+  "include": ["src/**/*.ts"]
+  ```
+
+### Salida de archivos
+- **`outDir`**: Especifica el directorio donde se generarán los archivos JavaScript transpilados. Esto ayuda a mantener el proyecto organizado.
+  **Ejemplo**:
+  ```json
+  "outDir": "./dist"
+  ```
+  Todos los archivos `.js` generados se almacenarán en la carpeta `dist`.
+
+- **`outFile`**: Combina todos los archivos transpilados en un único archivo JavaScript. Esto es útil para proyectos pequeños o cuando trabajas con sistemas de módulos como `AMD` o `SystemJS`.
+  - **Ejemplo**:
+    ```json
+    "outFile": "./dist/main.js"
+    ```
+    Aunque todo el código se combina en un solo archivo, los mapas de origen (`sourceMap`) permiten mantener la referencia al archivo TypeScript original.

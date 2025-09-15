@@ -32,6 +32,8 @@ console.log(msg);
   
   // Cuando se crear una vairble con valor literal, TS infiere su tipo, en este caso como number
   // let b = 10;
+
+  console.log( 'test' );
   
   // Declaración de una constante con un tipo explícito (number)
   const a: number = 20;
@@ -48,6 +50,9 @@ console.log(msg);
   b = {};
   b = [];
   b = false;
+
+  console.log( 'dev' );
+  
 
   // Es una mala práctica usar variables de tipo 'any' porque:
   // - Otros desarrolladores no sabrán qué tipo de valor espera la variable.
