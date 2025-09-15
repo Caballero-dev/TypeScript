@@ -75,7 +75,7 @@ En esta sección se trabaja con funciones
 - **Parámetro REST**: Permite capturar múltiples argumentos en un arreglo.
 - **Tipos de funciones**: Cómo definir el tipo de los parámetros y el retorno de una función.
 
-> **Más información:** Consulta [`Tipos`](funciones/README.md)
+> **Más información:** Consulta [`Funciones`](funciones/README.md)
 
 
 ## Objetos 
@@ -87,4 +87,4 @@ En esta sección se trabajara con objetos
 - **Tipos personalizados**: Uso de `type` para crear tipos reutilizables y mantener el código limpio.
 - **Tipos de unión**: Cómo manejar objetos que puedan tener múltiples formas utilizando `|`.
 
-> **Más información:** Consulta [`Tipos`](objetos/README.md)
+> **Más información:** Consulta [`Objetos`](objetos/README.md)
