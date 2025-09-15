@@ -61,13 +61,30 @@ Esto es útil para trabajar de manera más eficiente, ya que no es necesario eje
   - Genericos: Permiten crear componentes reutilizables que funcionan con múltiples tipos.
   - Tuplas: Arreglos con un número fijo de elementos y tipos específicos.
 
-**Inferir tipo**
+**Inferencia de tipos**:
 TypeScript, siempre que sea posible, intentará **inferir el tipo de dato** de una variable basándose en su valor inicial.
 
 > **Más información:** Consulta [`Tipos`](tipos/README.md)
 
 ## Funciones 
 
-Descripción
+En esta sección se trabaja con funciones
+- **Argumentos requeridos**: Parámetros que deben ser proporcionados al llamar una función.
+- **Argumentos opcionales**: Parámetros que no son obligatorios y se definen con `?`.
+- **Parámetros con valores por defecto**: Parámetros que tienen un valor inicial si no se proporciona uno.
+- **Parámetro REST**: Permite capturar múltiples argumentos en un arreglo.
+- **Tipos de funciones**: Cómo definir el tipo de los parámetros y el retorno de una función.
 
 > **Más información:** Consulta [`Tipos`](funciones/README.md)
+
+
+## Objetos 
+
+En esta sección se trabajara con objetos
+- **Objetos básicos**: Cómo TypeScript infiere automáticamente los tipos de las propiedades de un objeto literal.
+- **Objetos con tipos específicos**: Cómo definir objetos con tipos explícitos para garantizar que cumplan con una estructura definida.
+- **Métodos dentro de objetos**: Cómo incluir métodos en objetos y definir su tipo de retorno.
+- **Tipos personalizados**: Uso de `type` para crear tipos reutilizables y mantener el código limpio.
+- **Tipos de unión**: Cómo manejar objetos que puedan tener múltiples formas utilizando `|`.
+
+> **Más información:** Consulta [`Tipos`](objetos/README.md)
