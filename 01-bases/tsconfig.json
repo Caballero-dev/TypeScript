@@ -48,7 +48,7 @@
   "exclude": [
     "app-exclude.ts",
   ],
-  // "include": [
-  //   "**/*.ts"
-  // ]
+  "include": [
+    "ES6"
+  ]
 }
