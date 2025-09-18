@@ -26,6 +26,7 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
+    "noEmitOnError": true,
     // "noUncheckedIndexedAccess": true,
     // "exactOptionalPropertyTypes": true,
 
@@ -49,6 +50,6 @@
     "app-exclude.ts",
   ],
   "include": [
-    "ES6"
+    "classes"
   ]
 }

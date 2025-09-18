@@ -131,3 +131,13 @@ El archivo `tsconfig.json` permite configurar el comportamiento del compilador d
     "outFile": "./dist/main.js"
     ```
     Aunque todo el código se combina en un solo archivo, los mapas de origen (`sourceMap`) permiten mantener la referencia al archivo TypeScript original.
+
+### Evitar la generación de archivos en caso de errores
+**`noEmitOnError`**: Si está habilitado (`true`), TypeScript evitará generar archivos JavaScript (`.js`) si se detectan errores durante la compilación. Esto asegura que no se generen archivos transpilados incompletos o con errores.
+
+**Ejemplo**:
+```json
+"noEmitOnError": true
+```
+
+**Útil para desarrollo y producción**, ya que garantiza que el código transpilado esté libre de errores antes de ser utilizado.
