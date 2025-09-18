@@ -1,5 +1,28 @@
 "use strict";
 (() => {
+    class Mutante {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'Mundo a salvo :)';
+        }
+    }
+    class Villian extends Mutante {
+        conquistarMundo() {
+            return 'Mundo conquistado';
+        }
+    }
+    const wolverine = new Xmen('Wolverine', 'Logan');
+    const magneto = new Villian('Magneto', 'Magnus');
+    const printName = (character) => {
+        console.log(character.realName);
+    };
+})();
+(() => {
     class Avenger {
         static getAvgAge() {
             return this.name;
@@ -47,10 +70,28 @@
         }
     }
     const wolverine = new Xmen('Wolverine', 'Logan', true);
-    console.log(wolverine);
-    wolverine.getFullNameDesdeXmen();
     wolverine.fullName = 'Lalo';
-    console.log(wolverine.fullName);
     const nuevoAvenger = new Avenger('Iroman', 'Tony');
+})();
+(() => {
+    class Apocalipsis {
+        constructor(name) {
+            this.name = name;
+        }
+        static callApocalipsis() {
+            if (!Apocalipsis.instnace) {
+                Apocalipsis.instnace = new Apocalipsis('Soy apocalipsis el único');
+            }
+            return Apocalipsis.instnace;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    const apocalipsis1 = Apocalipsis.callApocalipsis();
+    const apocalipsis2 = Apocalipsis.callApocalipsis();
+    const apocalipsis3 = Apocalipsis.callApocalipsis();
+    apocalipsis1.changeName('Xavier');
+    console.log(apocalipsis1, apocalipsis2, apocalipsis3);
 })();
 //# sourceMappingURL=main.js.map

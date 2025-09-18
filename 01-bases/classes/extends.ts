@@ -64,9 +64,9 @@
   // Se crea una instancia de la clase 'Xmen' llamada 'wolverine'.
   const wolverine = new Xmen('Wolverine', 'Logan', true);
 
-  console.log(wolverine);
+  // console.log(wolverine);
   // Llama al método 'getFullNameDesdeXmen' de la instancia 'wolverine'.
-  wolverine.getFullNameDesdeXmen();
+  // wolverine.getFullNameDesdeXmen();
 
   // * Uso del setter
   // Establece un nuevo nombre para 'wolverine' utilizando el setter 'fullName'.
@@ -74,7 +74,7 @@
 
   // * Uso del getter
   // Obtiene el nombre completo de 'wolverine' utilizando el getter 'fullName'.
-  console.log(wolverine.fullName);
+  // console.log(wolverine.fullName);
   
   // * Creación de una instancia de la clase Avenger
   const nuevoAvenger =  new Avenger('Iroman', 'Tony');
