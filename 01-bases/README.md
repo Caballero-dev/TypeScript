@@ -141,3 +141,25 @@ El archivo `tsconfig.json` permite configurar el comportamiento del compilador d
 ```
 
 **Útil para desarrollo y producción**, ya que garantiza que el código transpilado esté libre de errores antes de ser utilizado.
+
+## ES6
+
+En esta sección se exploran las características principales de ES6 (ECMAScript 2015) y cómo se utilizan en TypeScript.
+
+- **Declaración de variables (`let` y `const`)**: Diferencias entre `var`, `let` y `const`, y por qué `let` y `const` son preferidos en ES6.
+- **Desestructuración**: Cómo extraer propiedades de objetos y elementos de arreglos de manera sencilla.
+- **Ciclo `for...of`**: Uso del ciclo `for...of` para iterar sobre arreglos de manera más legible.
+- **Clases en ES6**: Introducción a las clases en JavaScript, cómo declarar propiedades, métodos y trabajar con herencia.
+
+> **Más información:** Consulta [`ES6`](ES6/README.md)
+
+## Clases
+
+En esta sección se exploran las clases en TypeScript, incluyendo conceptos avanzados como herencia, clases abstractas y el patrón Singleton.
+
+- **Clases básicas**: Introducción a las clases en TypeScript, cómo declarar propiedades, métodos y constructores.
+- **Herencia**: Cómo extender una clase utilizando `extends` y el uso de `super` para llamar al constructor y métodos de la clase base.
+- **Clases abstractas**: Qué son las clases abstractas y cómo sirven como plantillas para otras clases.
+- **Patrón Singleton**: Implementación del patrón Singleton utilizando un constructor privado para garantizar que solo exista una única instancia de una clase.
+
+> **Más información:** Consulta [`Clases`](classes/README.md)
