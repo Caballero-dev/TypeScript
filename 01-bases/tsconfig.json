@@ -50,6 +50,6 @@
     "app-exclude.ts",
   ],
   "include": [
-    "interfaces"
+    "namespaces"
   ]
 }
