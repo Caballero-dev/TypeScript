@@ -163,3 +163,15 @@ En esta sección se exploran las clases en TypeScript, incluyendo conceptos avan
 - **Patrón Singleton**: Implementación del patrón Singleton utilizando un constructor privado para garantizar que solo exista una única instancia de una clase.
 
 > **Más información:** Consulta [`Clases`](classes/README.md)
+
+## Interfaces
+
+En esta sección se exploran las **interfaces** en TypeScript, las cuales nos permiten definir reglas o planos para construir clases, métodos u objetos. Aprenderemos a utilizar interfaces para garantizar que nuestras estructuras de datos sean consistentes y fáciles de mantener.
+
+> **Más información:** Consulta [`Interfaces`](interfaces/README.md)
+
+## Namespaces
+
+En esta sección se exploran los **namespaces** en TypeScript, los cuales nos permiten organizar y agrupar código relacionado dentro de un espacio de nombres. Esto ayuda a evitar conflictos de nombres y a encapsular lógica, exponiendo únicamente las partes necesarias para su uso externo.
+
+> **Más información:** Consulta [`Namespaces`](namespaces/README.md)
