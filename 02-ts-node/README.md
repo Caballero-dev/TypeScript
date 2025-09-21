@@ -91,7 +91,7 @@ Los **decoradores** en TypeScript son funciones especiales que se ejecutan en el
 
 Fueron introducidos inicialmente en frameworks como **Angular** y son ampliamente utilizados en otros frameworks como **NestJS**.
 
-[documentación oficial de TypeScript sobre decoradores](https://www.typescriptlang.org/docs/handbook/decorators.html).
+[Documentación oficial de TypeScript sobre decoradores](https://www.typescriptlang.org/docs/handbook/decorators.html).
 
 ### Decoradores de clases
 Los **decoradores de clases** se aplican directamente al constructor de una clase. Permiten modificar o extender el comportamiento de la clase, como bloquear su prototipo o añadir metadatos.
@@ -117,3 +117,5 @@ Los **decoradores de propiedades** se aplican a las propiedades de una clase. Pe
 
 #### Ejemplo:
 En el archivo `pokemon-class.ts`, el decorador `@readonly` convierte una propiedad en solo lectura dependiendo del valor del parámetro `isWritable`.
+
+> **Archivos de relacionados** [pokemon-class.ts](src/decorators/pokemon-class.ts), [index.decorators.ts](src/index.decorators.ts)
