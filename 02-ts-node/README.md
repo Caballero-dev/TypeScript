@@ -84,3 +84,36 @@ El patrón de **barril** (barrel) en TypeScript permite centralizar y simplifica
 - **Ejemplo**: Generación de las interfaces relacionadas con Pokémon, como `Pokemon`, `Ability`, `Species`, entre otras.
 
 > **Archivos relacionados:** [`pokemon.ts`](src/interfaces/pokemon.ts)
+
+## Decoradores
+
+Los **decoradores** en TypeScript son funciones especiales que se ejecutan en el momento de la **transpilación**. Se utilizan para **modificar** o **añadir funcionalidades** a clases, métodos, propiedades o parámetros. Los decoradores permiten escribir código más limpio, reutilizable y fácil de mantener.
+
+Fueron introducidos inicialmente en frameworks como **Angular** y son ampliamente utilizados en otros frameworks como **NestJS**.
+
+[documentación oficial de TypeScript sobre decoradores](https://www.typescriptlang.org/docs/handbook/decorators.html).
+
+### Decoradores de clases
+Los **decoradores de clases** se aplican directamente al constructor de una clase. Permiten modificar o extender el comportamiento de la clase, como bloquear su prototipo o añadir metadatos.
+
+#### Ejemplo:
+En el archivo `pokemon-class.ts`, se utiliza el decorador `@bloquearPrototipo` para evitar que se puedan añadir o modificar propiedades y métodos en el prototipo de la clase.
+
+### Decoradores de fábrica
+Los **decoradores de fábrica** son funciones que retornan un decorador. Esto permite que el decorador sea configurable mediante parámetros.
+
+#### Ejemplo:
+En el archivo `pokemon-class.ts`, el decorador `@printToConsoleConditional` es un decorador de fábrica que imprime el constructor de la clase solo si el parámetro `print` es `true`.
+
+### Decoradores de métodos
+Los **decoradores de métodos** se aplican a los métodos de una clase. Permiten modificar o extender el comportamiento de un método, como validar parámetros o añadir lógica adicional.
+
+#### Ejemplo:
+En el archivo `pokemon-class.ts`, el decorador `@CheckValidPokemonId` valida que el ID de un Pokémon sea un número entre 1 y 800 antes de ejecutar el método.
+
+### Decoradores de propiedades
+
+Los **decoradores de propiedades** se aplican a las propiedades de una clase. Permiten modificar el comportamiento de una propiedad, como hacerla de solo lectura o añadir validaciones.
+
+#### Ejemplo:
+En el archivo `pokemon-class.ts`, el decorador `@readonly` convierte una propiedad en solo lectura dependiendo del valor del parámetro `isWritable`.
