@@ -51,3 +51,36 @@ En TypeScript, los **imports** y **exports** son fundamentales para organizar y 
    - Ejemplo: `import * as HeroClasses from './classes/Hero';`.
 
 > **Archivos relacionados:** [`Hero.ts`](src/classes/Hero.ts), [`powers.ts`](src/data/powers.ts), [`index.imports.ts`](src/index.imports.ts)
+
+## Genericos
+
+Los **genéricos** en TypeScript permiten crear funciones, clases o interfaces que trabajan con múltiples tipos de datos, proporcionando flexibilidad y reutilización del código. Esto asegura que el tipo de dato se mantenga consistente a lo largo de la implementación.
+
+- **Ejemplo**: Uso de funciones genéricas para trabajar con diferentes tipos de datos sin perder el tipado estático.
+
+> **Archivos relacionados:** [`generics.ts`](src/generics/generics.ts)
+
+
+## Agrupar exportaciones
+
+El patrón de **barril** (barrel) en TypeScript permite centralizar y simplificar las exportaciones de un directorio. Esto facilita la importación de múltiples elementos desde un único archivo, mejorando la organización y legibilidad del código.
+
+- **Ejemplo**: Uso de un archivo `index.ts` para exportar interfaces como `Hero`, `Villain` y `Pokemon`.
+
+> **Archivos relacionados:** [`index.ts`](src/interfaces/index.ts), [`index.generics.ts`](src/index.generics.ts)
+
+## Axios
+
+**Axios** es una biblioteca para realizar solicitudes HTTP de manera sencilla y eficiente. En este proyecto, se utiliza junto con genéricos para manejar respuestas tipadas, asegurando que los datos obtenidos de una API cumplan con una estructura definida.
+
+- **Ejemplo**: Uso de Axios para obtener información de un Pokémon desde la API de PokeAPI, utilizando genéricos para tipar la respuesta.
+
+> **Archivos relacionados:** [`get-pokemon.ts`](src/generics/get-pokemon.ts), [`pokemon.ts`](src/interfaces/pokemon.ts), [`index.generics.pokemon.ts`](src/index.generics.pokemon.ts)
+
+## Quicktype.io
+
+**quicktype.io** es una herramienta que convierte respuestas JSON en interfaces de TypeScript. Esto permite generar estructuras tipadas automáticamente, facilitando el trabajo con datos provenientes de APIs.
+
+- **Ejemplo**: Generación de las interfaces relacionadas con Pokémon, como `Pokemon`, `Ability`, `Species`, entre otras.
+
+> **Archivos relacionados:** [`pokemon.ts`](src/interfaces/pokemon.ts)

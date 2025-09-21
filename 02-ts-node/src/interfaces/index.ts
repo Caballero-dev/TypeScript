@@ -9,3 +9,4 @@
 export { Hero } from './hero';
 // Exporta la interfaz 'Villain' desde el archivo 'villain.ts'.
 export { Villain } from './villain';
+export { Pokemon } from './pokemon';
