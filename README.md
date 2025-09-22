@@ -40,6 +40,31 @@ TypeScript (TS) busca ofrecer una experiencia de desarrollo similar a la de leng
 - **Transpilar**: Traducir un código de un lenguaje a otro manteniendo la misma funcionalidad. En este caso, TypeScript se transpila a JavaScript.
 - **Compilar**: Convertir un código fuente en un binario ejecutable por la máquina.
 
+## 01-bases
+En esta sección se exploran los fundamentos de TypeScript, incluyendo:
+- Tipos básicos como `string`, `number`, `boolean`, `enum`, y más.
+- Uso de funciones, interfaces, clases, y namespaces.
+- Comparación entre características de ES6 y TypeScript.
+
+> **Más información:** Consulta [`01-bases`](01-bases/README.md)
+
+## 02-ts-node
+Se enfoca en el uso de `ts-node` para ejecutar TypeScript directamente sin necesidad de transpilarlo manualmente. También incluye:
+- Decoradores: Cómo extender y modificar el comportamiento de clases, métodos y propiedades.
+- Genéricos: Creación de funciones y clases reutilizables.
+- Importación y uso de módulos.
+
+> **Más información:** Consulta [`02-ts-node`](02-ts-node/README.md)
+
+
+## 03-express-api
+Demuestra cómo trabajar con librerías que no están escritas en TypeScript, utilizando **Express.js** como ejemplo. Incluye:
+- Configuración de un servidor básico con Express.
+- Uso de archivos de definición de tipos (`@types`).
+- Transpilación y ejecución de un proyecto TypeScript con Node.js.
+
+> **Más información:** Consulta [`03-express-api`](03-express-api/README.md)
+
 ## Recursos recomendados
 
 Algunas páginas recomendadas para aprender más sobre TypeScript
